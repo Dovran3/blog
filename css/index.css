@@ -275,7 +275,7 @@ body {
 		left: 50%;
 		width: calc(229px + (669 - 229) * ((100vw - 320px) / (769 - 320)));
 		height: calc(229px + (669 - 229) * ((100vw - 320px) / (769 - 320)));
-		transform: translate(-50%, -50%) rotate(180deg);
+		transform: translate(-50%, 0%) rotate(180deg);
 		transition: 0.3s;
 	}
 	/* container for menu */
