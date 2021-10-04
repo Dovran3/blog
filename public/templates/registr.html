@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="auth">
+  <form action="" class="auth__form form">
+    <div class="form__title">REGISTRATION</div>
+    <input type="text" name="username" placeholder="Username..." class="form__input">
+    <input type="password" name="password" placeholder="New password..." class="form__input">
+    <input type="password" name="con_password" placeholder="Confirm new password..." class="form__input">
+    <div class="form__buttons">
+      <button type="reset" class="form__button">CLEAR</button>
+      <button type="submit" class="form__button">SAVE</button>
+    </div>
+  </form>
+</div>
+{% endblock %}

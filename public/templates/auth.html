@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="auth">
+  <form method="post" class="auth__form form">
+    <div class="form__title">AUTHORIZATION</div>
+    <input type="text" name="username" placeholder="Username..." class="form__input">
+    <input type="password" name="password" placeholder="Password..." class="form__input">
+    <div class="form__buttons">
+      <button type="submit" class="form__button">SIGN IN</button>
+      <button type="button" onclick="document.location='/registr'" class="form__button">SIGN UP</button>
+    </div>
+  </form>
+</div>
+{% endblock %}

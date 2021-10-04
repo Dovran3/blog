@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='../static/css/index.css') }}">
+  <title>Home Page</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__menu-container">
+        <div class="header__cut">
+          <div class="header__menu menu">
+            <div class="menu__top">
+              <a href="/profile" class="menu__link"><img src="{{ url_for('static', filename='../static/images/profile.svg') }}" alt=""></a>
+              <a href="/" class="menu__link"><img src="{{ url_for('static', filename='../static/images/home.svg') }}" alt=""></a>
+              <a href="/message" class="menu__link"><img src="{{ url_for('static', filename='../static/images/mail.svg') }}" alt=""></a>
+            </div>
+            <div class="menu__bottom">
+              <a href="/auth" class="menu__link"><img src="{{ url_for('static', filename='../static/images/power.svg') }}" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__burger">
+        <span></span>
+      </div>
+    </header>
+    {% block main %}
+    {% endblock %}
+  </div>
+
+  <script type="text/javascript" src="{{ url_for('static', filename='../static/js/main.js') }}"></script>
+</body>
+
+</html>
