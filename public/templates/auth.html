@@ -3,6 +3,17 @@
 {% block main %}
 <div class="auth">
   <form method="post" class="auth__form form">
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="flash-message" style="display: block;">
+      {% else %}
+        <div class="flash-message" style="display: none;">
+      {% endif %}
+        {% for message in messages %}
+          {{ message }}
+        {% endfor %}
+    {% endwith %}
+    </div>
     <div class="form__title">AUTHORIZATION</div>
     <input type="text" name="username" placeholder="Username..." class="form__input">
     <input type="password" name="password" placeholder="Password..." class="form__input">

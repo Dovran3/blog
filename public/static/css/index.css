@@ -230,6 +230,12 @@ body {
 	padding: calc(10px + (20 - 10) * ((100vw - 320px) / (1366 - 320))) 0;
 }
 
+.flash-message {
+	font-size: calc(20px + (40 - 20) * ((100vw - 320px) / (1366 - 320)));
+	margin: 0 0 20px 0;
+	text-align: center;
+}
+
 .form__title {
 	font-size: calc(20px + (40 - 20) * ((100vw - 320px) / (1366 - 320)));
 	margin: 0 0 20px 0;
